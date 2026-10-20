@@ -20,13 +20,13 @@ A finance client says: **“I want a Claude plugin that tells me which unpaid in
 
 You have 30 minutes:
 
-1. **First 5 minutes:** Ask the interviewer questions about the client's request. State any assumptions needed to proceed.
-2. **Next 20 minutes:** Create the plugin from scratch. It should identify overdue invoices, calculate days past due and the total overdue balance, give invoice-level reasons, and handle a missing due date explicitly. Use executable code for calculations.
-3. **Final 5 minutes:** Demonstrate the plugin, explain its design, and describe what you would verify before using it with a client.
+1. **First 5 minutes:** Discuss the request with the interviewer, who will play the client.
+2. **Next 20 minutes:** Build the plugin.
+3. **Final 5 minutes:** Demonstrate it and explain your decisions.
 
-Create your plugin in a new directory inside this repository. Your work should include the plugin manifest, a skill, and any scripts or other files you choose to use. You can test a local plugin with `claude --plugin-dir ./YOUR_PLUGIN_DIRECTORY` (restart Claude Code after creating the plugin).
+Create your plugin in a new directory inside this repository. You can test a local plugin with `claude --plugin-dir ./YOUR_PLUGIN_DIRECTORY` (restart Claude Code after creating the plugin).
 
-You may use Claude Code and documentation during the exercise. Prioritize a working, explainable result over extra features. Do not send messages to customers or modify invoice data.
+You may use Claude Code and documentation during the exercise. Do not send messages to customers or modify invoice data.
 
 ## Supplied tool
 
@@ -38,7 +38,7 @@ You may use Claude Code and documentation during the exercise. Prioritize a work
 - `due_date`: ISO date string or `null`
 - `status`: `open`
 
-The tool returns source records only. It does not calculate overdue days, totals, or recommendations. The mock data is synthetic.
+The mock data is synthetic.
 
 ## Submitting your work
 
